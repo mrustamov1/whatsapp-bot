@@ -15,7 +15,7 @@ app.post('/webhook', (req, res) => {
     const msg = req.body.Body.trim().toLowerCase();
 
     if (!users[from]) {
-        users[from] = { step: 0, data: {} };
+        users[from] = { step: 0, data: {} }
     }
 
     const user = users[from];
